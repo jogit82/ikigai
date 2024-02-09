@@ -37,7 +37,7 @@ export default function Github() {
   "updated_at": "2023-11-27T22:57:49Z"
 });
   const [githubUser, setGithubUser] = useState('jogit82');
-  const [githubReposUrl, setGithubReposUrl] = useState();
+  const [githubReposUrl, setGithubReposUrl] = useState("");
   const [githubRepos, setGithubRepos] = useState([""]);
 
   const fetchData = () => {
@@ -60,9 +60,7 @@ export default function Github() {
   }, []);
 
   useEffect(() => {
-    if (githubReposUrl) {
       retrieveRepos();
-    }
   }, [githubReposUrl]);
 
   return (

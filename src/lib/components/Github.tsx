@@ -80,7 +80,7 @@ export default function Github() {
       </div>
       <div className="row">
         {githubRepos.map((repo) => (
-          <div key="{repo.id}" className="card m-1" style={{ width: "18rem" }}>
+          <div key="{repo.url}" className="card m-1" style={{ width: "18rem" }}>
             {/* <img src="..." className="card-img-top" alt="..."/> */}
             <div className="card-body">
               <h5 className="card-title">{repo.name}</h5>
@@ -89,7 +89,7 @@ export default function Github() {
             {!repo.tags ? '' :
               <ul className="list-group list-group-flush">
                 {repo.tags.map((tag) => 
-                  <li className="list-group-item">{tag}</li>
+                  <li key={tag} className="list-group-item">{tag}</li>
                 )}
               </ul>
             }

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Fjord_One } from "next/font/google";
-import { ClerkProvider } from "@clerk/nextjs";
+// import { ClerkProvider } from "@clerk/nextjs";
 import "./bootstrap_overwrite.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -21,10 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider>
+    //<ClerkProvider>
     <html lang="en">
       <body className={fjord_One.className}>{children}</body>
     </html>
-    </ClerkProvider>
+    // </ClerkProvider>
   );
 }

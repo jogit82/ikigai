@@ -80,9 +80,8 @@ export default function Github() {
       </div>
       <div className="row">
         {githubRepos.map((repo) => (
-          <div key="{repo.url}" className="card m-1" style={{ width: "18rem" }}>
-            {/* <img src="..." className="card-img-top" alt="..."/> */}
-            <div className="card-body">
+          <div key="{repo.url}" className="card m-1" style={{ width: "18rem" }}>Something here
+            {/* <div className="card-body">
               <h5 className="card-title">{repo.name}</h5>
               <p className="card-text">{repo.description}</p>
             </div>
@@ -92,10 +91,10 @@ export default function Github() {
                   <li key={tag} className="list-group-item">{tag}</li>
                 )}
               </ul>
-            }
+            } */}
             <div className="card-body">
               <a href="{repo.url}" target="blank" className="card-link">Go to Repo</a>
-              <a href="#" className="card-link">{repo.url}</a>
+              {/* <a href="#" className="card-link">{repo.url}</a> */}
             </div>
           </div>
         ))}
